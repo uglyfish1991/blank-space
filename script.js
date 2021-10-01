@@ -1,4 +1,5 @@
 const rightframe = document.getElementById("right")
+const rightframeb = document.getElementById("rightb")
 let bginput = document.getElementById("csslineone")
 let bginputb = document.getElementById("csslineoneb")
 let bgcolourinput = document.getElementById("bginput")
@@ -12,7 +13,7 @@ const bodyChange= document.getElementById("body")
 
 // Code for the first box - expecting "background-color" to change body bg
 lineOne = () => {
-    console.log("l1 function happening")
+
     if (bginput.value == "background-color") {
         rightframe.style.backgroundColor = bgcolourinput.value;
         bginput.style.backgroundColor="lightgreen"
@@ -32,16 +33,17 @@ lineOne = () => {
     }
 }
 
+// Code for the first box - expecting "background-color" to change body bg
 lineOneb = () => {
 
     if (bginputb.value == "background-color") {
-        rightframe.style.backgroundColor = bgcolourinput.value;
+        rightframeb.style.backgroundColor = bgcolourinput.value;
         bginputb.style.backgroundColor="lightgreen"
         help.textContent = "Well done! You got the code! Try adding a colour now"
-    } else if (bginputb.value == "background-colour") {
+    } else if (bginput.value == "background-colour") {
         rightframe.style.backgroundColor = "white";
         help.textContent = "Almost! Check your spelling! Remember, CSS uses American Spelling"
-    } else if (bginputb.value == "backgroundcolor") {
+    } else if (bginput.value == "backgroundcolor") {
         rightframe.style.backgroundColor = "white";
         help.textContent = "Almost! Check the punctuation you're using, have you used a dash between words?"
     }
@@ -52,6 +54,7 @@ lineOneb = () => {
 
     }
 }
+
 // Code for the second box - expecting "cadetblue" or the hex to change body bg
 bgValue = () => {
     if (bgcolourinput.value == "cadetblue"||bgcolourinput.value == "#5f9ea0" && bginput.value == "background-color"){

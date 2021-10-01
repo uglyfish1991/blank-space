@@ -1,25 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.getScript("script2.js");
-    console.log("the page has js loaded")
-  });
-});
-</script>
-</head>
-
-<body>
-<button>refresh</button>
     <img src="img2.png">
     <div class="container">
         <div class="content">
@@ -59,20 +38,14 @@ $(document).ready(function(){
             </p>
         </div>
         <div class="content">
-            <div id="right">
+            <div id="rightb">
                 <p id="helptext">
                 <h1 class="coral">Hello and Welcome</h1>
                 <div class="middle">
                     Welcome to my website I hope you enjoy it<br>
                     I won't.
-                    </div>
-                    </p>
                 </div>
+                </p>
             </div>
         </div>
     </div>
-    helo
-        <script src="script2.js"></script>
-</body>
-
-</html>
