@@ -5,7 +5,8 @@ body {
 a {
     padding-right: 15px;
 }
-.container{
+.container1{
+    background-color: blueviolet;
     display: flex;
     justify-content: space-evenly;
     height:50vh;
@@ -56,3 +57,4 @@ input {
     border: 0px;
     background-color:lightcoral;
 }
+
