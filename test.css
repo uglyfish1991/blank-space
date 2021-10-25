@@ -82,6 +82,7 @@ pre {
     width:59%;
     overflow-y:scroll;
     text-align: center;
+    border-right: 2px solid rgb(221, 221, 221);
 }
 
 /* Holder for right hand content - flex is on for the  columns */
