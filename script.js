@@ -543,10 +543,15 @@ lvlFourFontSize = () => {
         help4.textContent ="This CSS might be a bit new - but this is selecting any <a> element that is a child of the class .nav. No other link will be affected"
         lvl4FontSize.style.backgroundColor= "lightgreen";
 
+    } else if (lvl4FontSize.value == "em" || lvl4FontSize.value == "%") {
+        ddNav.style.fontSize="20"+lvl4FontSize.value;
+        help4.textContent ="You've got the right idea! But not quite the right unit - try another and see how it works!"
+        lvl4FontSize.style.backgroundColor= "lightcoral";
+
     } 
     else {
-        ddMain.style.backgroundColor="white";
-        help3.textContent = "What kind of background are we trying to apply?"
+        ddNav.style.fontSize="14px";
+        help4.textContent = "We've got a font size property - but 20 what? We need a unit!"
         lvl4FontSize.style.backgroundColor = "lightcoral";
     }
 }
@@ -562,15 +567,15 @@ lvlFourFontFamily = () => {
     } 
     else {
         ddCont.style.fontFamily="Times New Roman";
-        help3.textContent = "What kind of background are we trying to apply?"
+        help4.textContent = "Have a look at where else we see \"Josefin Sans\" in our CSS - does that give us any clues as to what it is?"
         lvl4FontFamily.style.backgroundColor = "lightcoral";
     }
 }
 
 fullCheckD = () => {
     if (lvl4FontFamily.value == "font-family" && lvl4FontSize.value == "px" && lvl4Bg.value == "image") {
-        help3.textContent = "Amazing work! Use the 'Next' button above to move on to a harder challenge!"
+        help4.textContent = "Amazing work! Use the 'Next' button above to move on to a harder challenge!"
     } else {
-        help3.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
+        help4.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }
 }
