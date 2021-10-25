@@ -479,7 +479,7 @@ lvlThreeBordStyle = () => {
     }else {
         ccContent.style.border = "none";
         help3.textContent = "We've got some border shorthand CSS, with a border-width and a border-colour value in, what are we missing?"
-        lvl3Width.style.backgroundColor = "lightcoral";
+        lvl3BordStyle.style.backgroundColor = "lightcoral";
     }
 }
 
@@ -574,7 +574,7 @@ lvlFourFontFamily = () => {
 
 fullCheckD = () => {
     if (lvl4FontFamily.value == "font-family" && lvl4FontSize.value == "px" && lvl4Bg.value == "image") {
-        help4.textContent = "Amazing work! Use the 'Next' button above to move on to a harder challenge!"
+        help4.textContent = "Amazing work! Congratulations! You've completed the CSS Challenge!"
     } else {
         help4.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
     }

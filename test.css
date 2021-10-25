@@ -311,5 +311,31 @@ pre {
 }
 
 .five{
-    display:none;
+    display:flex;
+}
+
+.ee{
+    background-color:seashell;
+}
+
+.eenav{
+    height:10%;
+    background-color: violet;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    color:rebeccapurple;
+    font-size: 20px;
+}
+
+.eecontent{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:50%;
+}
+
+.eeinner{
+    width:45%;
+    background-color: thistle;
 }
