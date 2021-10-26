@@ -365,7 +365,7 @@ lvlTwoPad = () => {
 }
 
 fullCheckB = () => {
-    if (lvl2bg.value == "peachpuff" && lvl2TAlign.value == "text" && lvl2TPx.value == "px" && lvl2MarTop == "-top" && lvl2Border == "solid"  && lvl2Padding == "padding") {
+    if (lvl2bg.value == "peachpuff" && lvl2TAlign.value == "text" && lvl2TPx.value == "px" && lvl2MarTop.value == "-top" && lvl2Border == "solid" && lvl2Padding == "padding") {
         help2.textContent = "Amazing work! Use the 'Next' button above to move on to a harder challenge!"
     } else {
         help2.textContent = "Keep filling in those inputs until the page matches! The input boxes will go green if you've submitted the expected answer!"
